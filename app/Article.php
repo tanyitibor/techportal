@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Scopes\PublishedScope;
+use Carbon\Carbon;
 use Encore\Admin\Auth\Database\Administrator;
 use Illuminate\Database\Eloquent\Model;
 use Image;
@@ -66,9 +67,7 @@ class Article extends Model
         }
 
         if (!$this->published_at && $this->is_published) {
-            $now = new \DateTime(null, new \DateTimeZone(config('app.timezone')));
-
-            $this->published_at = $now->format('Y-m-d H:i:s');
+            $this->published_at = Carbon::now();
         }
 
         parent::save();
