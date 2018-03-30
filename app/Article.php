@@ -66,7 +66,9 @@ class Article extends Model
         }
 
         if (!$this->published_at && $this->is_published) {
-            $this->published_at = date("Y-m-d H:i:s");
+            $now = new \DateTime(null, new \DateTimeZone(config('app.timezone')));
+
+            $this->published_at = $now->format('Y-m-d H:i:s');
         }
 
         parent::save();
