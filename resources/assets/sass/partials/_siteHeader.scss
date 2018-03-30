@@ -1,0 +1,15 @@
+.site-header {
+    nav {
+        margin: 0 auto;
+        width: 100%;
+        max-width: $container-max-width;
+    }
+
+    ul>li:first-child {
+        font-style: italic;
+    }
+
+    li.active {
+        border-bottom: 2px solid $blue;
+    }
+}

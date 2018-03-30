@@ -1,0 +1,16 @@
+.article-list {
+    .article-prev {
+        @include box-shadow($box-shadow-variable);
+
+        background: #FFF;
+        overflow: hidden;
+        margin-bottom: 10px;
+        padding: 1%;
+
+        img {
+            width: 47%;
+            padding-right: 1%;
+            float: left;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.site-footer {
+    @include box-shadow($box-shadow-variable);
+
+    background: #FFF;
+    padding: 20px 10px;
+    text-align: center;
+
+    a {
+        margin: 0 10px;
+    }
+}

@@ -1,0 +1,33 @@
+@import './variables';
+@import 'vital';
+
+@import './partials/article';
+@import './partials/articleList';
+@import './partials/featured';
+@import './partials/pagination';
+@import './partials/siteFooter';
+@import './partials/siteHeader';
+@import './partials/search';
+
+body {
+    background: #f9f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: $container-max-width;
+    margin: 0 auto;
+
+    .inner-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .inner-container>div {
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: $phablet) {
+    @import './partials/mobile/all';
+}

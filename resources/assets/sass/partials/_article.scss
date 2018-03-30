@@ -1,0 +1,24 @@
+.article {
+    @include box-shadow($box-shadow-variable);
+
+    background: #FFF;
+
+    .title {
+        text-align: center;
+    }
+
+    .preview-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .body {
+        padding: 10px;
+    }
+
+    footer {
+        overflow: hidden;
+        padding: 10px;
+    }
+}
