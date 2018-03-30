@@ -43,3 +43,5 @@ author2 | author2
 
 ## Demo
 http://techportal.ml
+
+Articles are copied from https://mashable.com .
