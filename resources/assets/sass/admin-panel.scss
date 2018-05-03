@@ -1,0 +1,24 @@
+@import 'vital';
+
+body {
+    background: #f9f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    .inner-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .inner-container>div {
+        padding: 2%;
+    }
+}
+
+tr {
+    border-bottom: 1px solid #333;
+}
