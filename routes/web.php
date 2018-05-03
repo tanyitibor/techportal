@@ -25,3 +25,14 @@ Route::get('/search', 'SearchController@index')
 
 Route::get('/authors/{username}', 'AuthorController@show')
     ->name('authors.show');
+
+Route::group([
+    'prefix'    => 'admin-panel',
+    'namespace' => 'AdminPanel',
+    'as'        => 'admin-panel.',
+], function () {
+    Route::resource('articles', 'ArticleController');
+    Route::get('articles/{article}/markdown', 'ArticleController@markdown')
+        ->name('articles.markdown');
+
+});

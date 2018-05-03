@@ -1,5 +1,6 @@
 {
     "/js/simplemde.min.js": "/js/simplemde.min.js",
     "/css/app.css": "/css/app.css",
+    "/css/admin-panel.css": "/css/admin-panel.css",
     "/css/simplemde.min.css": "/css/simplemde.min.css"
 }

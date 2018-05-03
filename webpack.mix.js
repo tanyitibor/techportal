@@ -8,3 +8,7 @@ mix.copy('node_modules/simplemde/dist/simplemde.min.css', 'public/css/simplemde.
 mix.sass('resources/assets/sass/app.scss', 'public/css', {
   includePaths: [require('vital-css').includePaths]
 })
+
+mix.sass('resources/assets/sass/admin-panel.scss', 'public/css', {
+  includePaths: [require('vital-css').includePaths]
+})
